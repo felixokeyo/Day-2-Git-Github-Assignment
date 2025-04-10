@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Vanguard FC Kenya Fan Membership: Multimedia and Fan Registration
+    </title>
+  </head>
+  <body>
+    <h1>Welcome to Vanguard FC <br />Fan Registration Page!</h1>
+
+    <section>
+      <h2>Membership Types</h2>
+      <!-- Ordered list with roman numerals -->
+      <ol type="">
+        <li>Adult Membership</li>
+        <li>Junior membership</li>
+        <li>Senior Membership</li>
+        <li>Family Package Membership</li>
+        <li>International Membership</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Beautiful Landscape</h2>
+      <!-- external image from pexels.com -->
+      <img
+        src="https://images.pexels.com/photos/31163019/pexels-photo-31163019/free-photo-of-exciting-soccer-match-in-abu-dhabi-stadium.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Arsenal jerseys hanging in locker room"
+        width="600"
+      />
+      <p>Image sourced from Pexels.com</p>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+
+      <!-- Table with g contacts with: name, address, mobile and email information -->
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Macia Njeri Griffiths</td>
+            <td>2789 GPO, Mombasa</td>
+            <td>+254 722 459 784</td>
+            <td>macia.njeri@vanguardfc.com</td>
+          </tr>
+          <tr>
+            <td>Kingston Mandera</td>
+            <td>15478 00100 GPO, Nairobi</td>
+            <td>+254 722 345 678</td>
+            <td>kingston.mandera@vanguardfc.com</td>
+          </tr>
+          <tr>
+            <td>Allan Ondiek Omondi</td>
+            <td>34678 GPO, Nakuru</td>
+            <td>+254 743 768 656</td>
+            <td>allan.ondiek@vanguardfc.com</td>
+          </tr>
+          <tr>
+            <td>Don Pedro</td>
+            <td>65432 00200 City Square, Nairobi</td>
+            <td>+254 712 233 233</td>
+            <td>don.pedro@vanguardfc.com</td>
+          </tr>
+
+          <tr>
+            <td>Masha athman</td>
+            <td>25645 GPO, Mombasa</td>
+            <td>+254 733 555 111</td>
+            <td>masha.athman@vanguardfc.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+
+      <!-- Form for user registration with fields for name, email, password, date of birth, country, membership type, and social media platforms -->
+      <form action="/register" method="post">
+        <fieldset>
+          <legend>Account Details</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select your country</option>
+              <option value="ke">Kenya</option>
+              <option value="ug">Uganda</option>
+              <option value="tz">Tanzania</option>
+              <option value="rw">Rwanda</option>
+              <option value="bi">Burundi</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <p>Choose your prefered membership type:</p>
+            <label>
+              <input type="radio" name="membership" value="adult" required />
+              Adult
+            </label>
+            <label>
+              <input type="radio" name="membership" value="junior" required />
+              Junior
+            </label>
+            <label>
+              <input type="radio" name="membership" value="Senior" required />
+              Senior
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="Family Package"
+                required
+              />
+              Family Package
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="International"
+                required
+              />
+              International
+            </label>
+          </div>
+          <br />
+
+          <div>
+            <p>Select your favorite social media platforms:</p>
+            <label>
+              <input
+                type="checkbox"
+                name="social media platforms"
+                value="Instragram"
+              />
+              Instagram
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="social media platforms"
+                value="TikTok"
+              />
+              TikTok
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="social media platforms"
+                value="Facebook"
+              />
+              Facebook
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="social media platforms"
+                value="Twitter"
+              />
+              Twitter
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="social media platforms"
+                value="Youtube"
+              />
+              Youtube
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </body>
+</html>
